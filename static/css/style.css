@@ -61,7 +61,6 @@ section {
 .navbar {
   background-color: var(--zx-violet);
   border-bottom: 4px solid var(--zx-yellow);
-  padding: 5rem;
 }
 .nav-link {
   margin-top: 0;
@@ -70,6 +69,9 @@ section {
   font-weight: 500;
   transition: 0.3s ease;
   border-bottom: 0px solid var(--zx-yellow);
+}
+.nav-item.dropdown {
+  list-style-type: none;
 }
 .nav-item {
   margin-right: 1rem;
@@ -115,30 +117,11 @@ section {
   box-shadow: 0 0 10px var(--text-white);
 }
 
-.navsrc button {
-  color: var(--zx-violet);
-  font-size: 1.4rem;
-  background: var(--zx-yellow);
-  border-radius: 1rem;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.navsrc button:active,
-.navsrc button:hover {
-  transform: scale(0.9);
-  transition: 0.3s ease;
-  color: var(--zx-violet);
-  font-size: 1.4rem;
-  background: var(--zx-yellow);
-  border-radius: 1rem;
-  font-weight: 600;
-}
-
 .jumlahcart {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 4%;
+  left: 10%;
+  transform: translateX(-50%);
   width: 1.3rem;
   height: 1.3rem;
   background: var(--zx-red);
@@ -147,20 +130,34 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--text-white);
   font-weight: 700;
 }
 
-.navbar .logo img {
-  width: 8%;
-  padding: 0;
+.dropdown-menu,
+.dropdown-menu.show {
+  background: var(--zx-violet);
+  border: 3px solid var(--zx-yellow);
+  border-radius: 10px;
 }
-.navbar .logo {
+.dropdown-menu a.dropdown-item,
+.dropdown-menu.show {
+  color: var(--text-white);
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: var(--zx-violet);
+}
+.dropdown-menu a.dropdown-item:hover {
+  color: var(--zx-violet);
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: var(--text-white);
+}
+
+.navbar img {
+  max-width: 5%;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Menu syle*/

@@ -27,68 +27,40 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-2">
-      <div class="logo">
-        <img src="/static/img/BSI.png" class="img-thumbnail" alt="" />
-        <img src="/static/img/kdk.jpg" class="img-thumbnail mx-3" alt="" />
-        <a class="navbar-brand" href="#">Kelompok<span class="kelompok"> 3</span></a>
-      </div>
       <div class="container">
+        <img src="/static/img/BSI.png" class="img-thumbnail" alt="BSI" />
+        <img src="/static/img/kdk.jpg" class="img-thumbnail mx-3" alt="BSI" />
+        <a class="navbar-brand" href="#">Kelompok<span class="kelompok"> 3</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#zxNavlist" aria-controls="zxNavlist" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="zxNavlist">
-          <ul class="navbar-nav ms-auto mx-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#Menu">Menu</a>
+              <a class="nav-link active" aria-current="page" href="#Menu">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Team">Our Team</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="btn-logout" href="#" onclick="event.preventDefault(); confirmLogout();"> Logout </a>
-            </li>
           </ul>
-          <div class="navsrc m-2 position-relative">
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Troli <i class="bi bi-cart4 fs-4"></i></button>
-            <div class="jumlahcart" id="jumlahcart">
-              <span>{{ session.get('cart_count', 0) }}</span>
-            </div>
-          </div>
-        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart4 fs-4 me-2"></i>Keranjang</a>
+                <div class="jumlahcart" id="jumlahcart">
+                  <span>{{ session.get('cart_count', 0) }}</span>
+                </div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" id="btn-logout" onclick="event.preventDefault(); confirmLogout();"><i class="bi bi-door-open-fill fs-4 me-2"></i>Logout</a>
+              </li>
+            </ul>
+          </li>
         </div>
       </div>
     </nav>
-    <div class="alertcontainer d-flex justify-content-center align-items-center d-none" id="alertcontainer" role="alert">
-      <div id="alertBox-Success" class="alertBox d-none">
-        <div class="textalert text-center">
-          <h5><i class="bi bi-check-square-fill fs-4"></i> Success</h5>
-          <h5 id="alertMessageSuccess"></h5>
-        </div>
-      </div>
-      <div id="alertBox-Warning" class="alertBox d-none">
-        <div class="textalert text-center">
-          <h5><i class="bi bi-exclamation-square-fill fs-4"></i> Warning</h5>
-          <h5 id="alertMessageWarning"></h5>
-        </div>
-      </div>
-      <!-- <div id="alertBox-Error" class="alertBox">
-        <div class="textalert text-center">
-          <h5><i class="bi bi-x-square-fill fs-4"></i> Error</h5>
-          <h5 id="alertMessage"></h5>
-        </div>
-      </div> -->
-      <!-- CONFIRM DELETE MODAL -->
-      <div id="confirmModal" class="confirm-modal d-none">
-        <div class="confirm-box">
-          <h5 class="confirm-title">Konfirmasi</h5>
-          <h6 class="confirm-message"></h6>
-          <div class="confirm-buttons">
-            <button id="confirmYes" class="btn">Yes</button>
-            <button id="confirmNo" class="btn">No</button>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <section id="Menu">
       <div class="container">
         <div class="row d-flex justify-content-center align-items-center">
@@ -288,6 +260,38 @@
         </div>
       </div>
     </footer>
+
+    <div class="alertcontainer d-flex justify-content-center align-items-center d-none" id="alertcontainer" role="alert">
+      <div id="alertBox-Success" class="alertBox d-none">
+        <div class="textalert text-center">
+          <h5><i class="bi bi-check-square-fill fs-4"></i> Success</h5>
+          <h5 id="alertMessageSuccess"></h5>
+        </div>
+      </div>
+      <div id="alertBox-Warning" class="alertBox d-none">
+        <div class="textalert text-center">
+          <h5><i class="bi bi-exclamation-square-fill fs-4"></i> Warning</h5>
+          <h5 id="alertMessageWarning"></h5>
+        </div>
+      </div>
+      <!-- <div id="alertBox-Error" class="alertBox">
+        <div class="textalert text-center">
+          <h5><i class="bi bi-x-square-fill fs-4"></i> Error</h5>
+          <h5 id="alertMessage"></h5>
+        </div>
+      </div> -->
+      <!-- CONFIRM DELETE MODAL -->
+      <div id="confirmModal" class="confirm-modal d-none">
+        <div class="confirm-box">
+          <h5 class="confirm-title">Konfirmasi</h5>
+          <h6 class="confirm-message"></h6>
+          <div class="confirm-buttons">
+            <button id="confirmYes" class="btn">Yes</button>
+            <button id="confirmNo" class="btn">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
