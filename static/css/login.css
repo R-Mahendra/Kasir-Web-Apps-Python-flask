@@ -39,8 +39,8 @@
 
 #zx__container {
   position: relative;
-  width: 980px;
-  height: 600px;
+  width: 950px;
+  height: 580px;
   border-radius: 10px;
   border: 3px solid var(--zx-yellow-dark);
   background: transparent;
@@ -76,7 +76,7 @@
   transition-delay: 0.7s;
   transform: rotate(0deg) skewY(0deg);
   transform-origin: bottom left;
-  left: 43%;
+  left: 45%;
   top: 100%;
 }
 .zx__container.zx__Animate .zx__animasiFirst {
@@ -312,7 +312,7 @@
   text-align: start;
 }
 .zx__SignUPLeft h2 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   text-align: start;
   font-family: var(--font-walpoet);
   line-height: 1;
@@ -344,7 +344,7 @@
 }
 
 .zx__SignUPRight h2 {
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   text-align: center;
   font-weight: 700;
   color: var(--bg-primary);
