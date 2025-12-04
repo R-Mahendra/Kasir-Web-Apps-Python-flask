@@ -509,14 +509,18 @@
 
 #mobileAlert {
   position: fixed;
-  top: 40%;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
   padding: 1rem;
-  min-width: 23rem;
-  max-height: 7rem;
+  min-width: 100%;
+  min-height: 100vh;
   text-align: center;
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alertBox {

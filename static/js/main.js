@@ -229,11 +229,10 @@ function confirmLogout() {
         </div> `;
         btn.style.pointerEvents = "none";
       }
-
       setTimeout(() => {
         // Submit logout form
         document.getElementById("logoutForm").submit();
-      }, 3000);
+      }, 2000);
     }
   });
 }
@@ -670,6 +669,31 @@ function scrollToSection(event, sectionId) {
     }
   });
 }
+window.addEventListener("DOMContentLoaded", () => {
+  function toggleMobileAlert() {
+    const alertEl = document.getElementById("mobileAlert");
+    const parent = document.getElementById("parentMobileAlert");
+    if (!alertEl || !parent) return; // antisipasi DOM belum ada
+
+    const box = alertEl.querySelector(".alertBox");
+
+    if (window.innerWidth < 992) {
+      alertEl.classList.remove("d-none");
+      parent.classList.remove("d-none");
+      box.classList.add("show");
+    } else {
+      alertEl.classList.add("d-none");
+      parent.classList.add("d-none");
+      box.classList.remove("show");
+    }
+  }
+
+  // run sekali setelah DOM siap
+  toggleMobileAlert();
+
+  // realtime tanpa refresh
+  window.addEventListener("resize", toggleMobileAlert);
+});
 
 // ================================================Start scroll reveals============================================================== //
 ScrollReveal({

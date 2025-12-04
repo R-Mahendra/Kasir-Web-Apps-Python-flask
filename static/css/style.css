@@ -555,6 +555,40 @@ footer p {
   color: var(--text-white);
 }
 
+#mobileAlert {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 1rem;
+  min-width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background: rgba(1, 1, 1, 0.337);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertBox {
+  min-width: 20rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--zx-violet);
+  color: var(--zx-yellow);
+  border: 2px solid var(--zx-yellow);
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* class aktif → fade in */
+.alertBox.show {
+  opacity: 1;
+}
+
 @media (max-width: 1200px) {
   .wrapper .cards img {
     max-width: 100%;

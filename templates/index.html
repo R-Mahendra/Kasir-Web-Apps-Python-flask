@@ -44,8 +44,8 @@
             </li>
           </ul>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
-            <ul class="dropdown-menu">
+            <a class="nav-link dropdown-toggle" id="dropdownToggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other</a>
+            <ul class="dropdown-menu" id="dropdownMenu">
               <li>
                 <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart4 fs-4 me-2"></i>Keranjang</a>
                 <div class="jumlahcart" id="jumlahcart">
@@ -64,7 +64,7 @@
     <section id="Menu">
       <div class="container">
         <div class="row d-flex justify-content-center align-items-center">
-          {% set icons = { "Makanan": "bi-egg-fried", "Minuman": "bi-cup-straw", "Makanan ringan": "bi-emoji-smile" } %} {% for kategori, items in menu.items() %}
+          {% set icons = { "Makanan": "bi-egg-fried", "Minuman": "bi-cup-straw", "Makanan ringan": "bi-cake2-fill" } %} {% for kategori, items in menu.items() %}
           <div class="col-lg-12">
             <h1 class="text-center">
               <i class="bi {{ icons.get(kategori, 'bi-box') }}"></i> {{ kategori }}
@@ -213,7 +213,7 @@
           </div>
         </div>
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-lg-4 m-0 rfk">
+          <div class="col-lg-4 mb-3 rfk">
             <div class="card d-flex justify-content-center align-items-center">
               <img src="/static/img/ripki.jpg" class="img-thumbnail" alt="image" />
               <div class="card-body text-center">
@@ -223,7 +223,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 m-0 ndi">
+          <div class="col-lg-4 mb-3 ndi">
             <div class="card d-flex justify-content-center align-items-center">
               <img src="/static/img/andi.jpg" class="img-thumbnail" alt="image" />
               <div class="card-body text-center">
@@ -233,7 +233,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 m-0 cia">
+          <div class="col-lg-4 mb-3 cia">
             <div class="card d-flex justify-content-center align-items-center">
               <img src="/static/img/cia.jpg" class="img-thumbnail" alt="image" />
               <div class="card-body text-center">
@@ -289,6 +289,14 @@
             <button id="confirmYes" class="btn">Yes</button>
             <button id="confirmNo" class="btn">No</button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="parentMobileAlert d-none" id="parentMobileAlert">
+      <div id="mobileAlert" class="d-none">
+        <div class="alertBox">
+          <h5 class="mb-2">Noted.</h5>
+          <h5 class="m-0">ini hanya untuk desktop! Terima Kasih.</h5>
         </div>
       </div>
     </div>
