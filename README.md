@@ -1,4 +1,5 @@
-# 🍽️ Sistem Kasir Restoran Digital
+<div align="center">
+<h1> 🍽️ Sistem Kasir Restoran Digital</h1>
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-3.0+-green.svg)
@@ -7,7 +8,8 @@
 
 **Aplikasi web kasir restoran modern dengan fitur lengkap:** Authentication, Cart Management, Auto-calculation, dan PDF Receipt Generator.
 
-Dikembangkan oleh **Kelompok 4** sebagai project akhir mata kuliah.
+Dikembangkan oleh **Kelompok 3** sebagai project akhir mata kuliah.
+</div>
 
 ---
 
