@@ -112,7 +112,8 @@ Universitas Bina Sarana Informatika (Cikarang).
 - **CSS3** - Modern styling
 - **Bootstrap 5.3** - Responsive framework
 - **JavaScript ES6** - Client-side logic
-- **Font Awesome 6.4** - Icons
+- **Bootstrap 1.13.1** - Icons
+- **Scrollrevealjs** - Animation Scrolling
 
 ### Storage
 - **Flask Session** - Server-side session management
@@ -129,8 +130,8 @@ Universitas Bina Sarana Informatika (Cikarang).
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/restaurant-pos-system.git
-cd restaurant-pos-system
+git clone https://github.com/R-Mahendra/Kasir-Web-Apps-Python-flask-.git
+cd Kasir-Web-Apps-Python-flask
 ```
 
 ### Step 2: Create Virtual Environment (Recommended)
