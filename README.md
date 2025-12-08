@@ -298,7 +298,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2024 Kelompok 4
+Copyright (c) 2025 Kelompok 3
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -331,17 +331,6 @@ in the Software without restriction...
 
 ---
 
-## 📞 Support
-
-Jika ada pertanyaan atau issues:
-
-- 📧 Email: kelompok4@university.ac.id
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/restaurant-pos-system/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/restaurant-pos-system/discussions)
-
----
-
-
 ## 🎓 Educational Purpose
 
 Project ini dikembangkan untuk tujuan edukasi dalam mata kuliah **Pemrograman Web**. Implementasi mencakup:
@@ -362,14 +351,14 @@ Project ini dikembangkan untuk tujuan edukasi dalam mata kuliah **Pemrograman We
 
 ```bash
 # 1. Clone
-git clone https://github.com/yourusername/restaurant-pos-system.git
-cd restaurant-pos-system
+git clone https://github.com/R-Mahendra/Kasir-Web-Apps-Python-flask-.git
+cd Kasir-Web-Apps-Python-flask
 
 # 2. Install
-pip install flask reportlab
+pip install -r requirements.txt
 
 # 3. Run
-python app.py
+python main.py
 
 # 4. Login
 # URL: http://localhost:5000
