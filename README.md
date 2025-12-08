@@ -1,4 +1,4 @@
-<div align="center">
+<img width="208" height="45" alt="image" src="https://github.com/user-attachments/assets/32ef586d-eea1-4dc3-9a8c-1b82deca2aff" /><div align="center">
 <h1>🍽️ Sistem Kasir Restoran Digital</h1>
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
@@ -311,12 +311,13 @@ in the Software without restriction...
 
 **Kelompok 3 - Tim Pengembang**
 
-| Name | Role | GitHub |
-|------|------|--------|
-| Reza Mahendra | Project Lead & Fullstack | 17250007 |
-| Member 2 | Frontend & UI/UX | [@member2](https://github.com/member2) |
-| Member 3 | Database & API | [@member3](https://github.com/member3) |
-| Member 4 | Testing & Documentation | [@member4](https://github.com/member4) |
+| Name | NIM |
+|------|--------|
+| Reza Mahendra | 17250007 |
+| Rifqy Ardian Adinata | 17250522 |
+| Fitria Haryani | 17250015 |
+| Muhamad Bagas Triandy | 17250036 |
+| Cheril Aprillia Putri | 17250385 |
 
 ---
 
