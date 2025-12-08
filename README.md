@@ -390,6 +390,6 @@ python main.py
 
 ---
 
-© 2025 Kelompok 4. All Rights Reserved.
+© 2025 Kelompok 3. All Rights Reserved.
 
 </div>
