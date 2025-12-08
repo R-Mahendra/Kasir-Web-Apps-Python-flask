@@ -1,3 +1,4 @@
+<div align="center">
 <h1>Sistem Kasir Restoran Digital</h1>
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
@@ -389,6 +390,6 @@ python main.py
 
 ---
 
-© 2024 Kelompok 4. All Rights Reserved.
+© 2025 Kelompok 4. All Rights Reserved.
 
 </div>
