@@ -93,7 +93,6 @@ def login():
     """
     Login page and authentication handler
     """
-    # If already logged in, redirect to index
     if session.get("logged_in"):
         return redirect(url_for("index"))
 
@@ -101,28 +100,26 @@ def login():
         email = request.form.get("email", "").strip()
         password = request.form.get("password", "")
 
-        # Validate input
+        # Input kosong
         if not email or not password:
-            return render_template("login.html", error="Email dan password harus diisi")
+            return render_template("login.html", error="Email dan password harus diisi"), 401
 
-        # Check credentials
+        # Cek kredensial
         if email in USERS and check_password_hash(USERS[email], password):
-            # Set session variables
             session.clear()
             session["logged_in"] = True
             session["email"] = email
             session["login_time"] = datetime.datetime.now().timestamp()
             session.permanent = True
 
-            # Initialize empty cart
             session["jumlahcart"] = []
             session["cart_count"] = 0
 
-            # Redirect to next or index
             next_page = request.args.get("next")
             return redirect(next_page if next_page else url_for("index"))
+
         else:
-            return render_template("login.html", error="Email atau password salah...!")
+            return render_template("login.html", error="Email atau password salah...!"), 401
 
     # GET request
     timeout = request.args.get("timeout")
