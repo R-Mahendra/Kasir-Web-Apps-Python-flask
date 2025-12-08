@@ -313,7 +313,7 @@ in the Software without restriction...
 
 | Name | Role | GitHub |
 |------|------|--------|
-| Member 1 | Project Lead & Backend | [@member1](https://github.com/member1) |
+| Reza Mahendra | Project Lead & Fullstack | 17250007 |
 | Member 2 | Frontend & UI/UX | [@member2](https://github.com/member2) |
 | Member 3 | Database & API | [@member3](https://github.com/member3) |
 | Member 4 | Testing & Documentation | [@member4](https://github.com/member4) |
@@ -380,7 +380,7 @@ python app.py
 
 ## 📝 Changelog
 
-### Version 1.0.0 (2024-12-08)
+### Version 5.1.0 (2025-12-08)
 - ✨ Initial release
 - ✅ Authentication system
 - ✅ Cart management
