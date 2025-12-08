@@ -1,39 +1,24 @@
 <div align="center">
-<h1> 🍽️ Sistem Kasir Restoran Digital</h1>
+<h1>🍽️ Sistem Kasir Restoran Digital</h1>
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-3.0+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-success.svg)
+</div>
 
-**Aplikasi web kasir restoran modern dengan fitur lengkap:** Authentication, Cart Management, Auto-calculation, dan PDF Receipt Generator.
+## 📌 Deskripsi
+<div align="center">
+Aplikasi ini adalah sistem kasir digital berbasis web yang dibangun menggunakan Flask.
+Tujuan utamanya adalah mempermudah proses pemesanan dengan menyediakan fitur pengelolaan keranjang, perhitungan otomatis (subtotal, diskon, PPN, total), dan kemampuan untuk mengunduh struk dalam bentuk PDF lengkap dengan logo restoran.
 
-Dikembangkan oleh **Kelompok 3** sebagai project akhir mata kuliah.
+Dikembangkan oleh Kelompok 3 sebagai project akhir (UTS) mata kuliah Dasar pemprograman.<br>
+Universitas Bina Sarana Informatika (Cikarang).
 </div>
 
 ---
 
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Demo](#-demo)
-- [Screenshots](#-screenshots)
-- [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [API Endpoints](#-api-endpoints)
-- [Security](#-security)
-- [Testing](#-testing)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Team](#-team)
-
----
-
 ## ✨ Features
-
 ### 🔐 **Authentication System**
 - ✅ Secure login dengan session management
 - ✅ Auto-logout setelah 1 jam inactivity
@@ -72,50 +57,44 @@ Dikembangkan oleh **Kelompok 3** sebagai project akhir mata kuliah.
 
 ---
 
-## 🎥 Demo
-
-### Login Page
-![Login Demo](https://via.placeholder.com/800x400/667eea/ffffff?text=Login+Page)
-
-### Main Dashboard
-![Dashboard Demo](https://via.placeholder.com/800x400/764ba2/ffffff?text=Dashboard)
-
-### PDF Receipt
-![Receipt Demo](https://via.placeholder.com/800x400/667eea/ffffff?text=PDF+Receipt)
-
-> **Note:** Replace placeholder images dengan actual screenshots
-
----
-
 ## 📸 Screenshots
 
 <details>
 <summary>Click to view all screenshots</summary>
 
 ### 1. Login Page
-- Modern gradient design
-- Password show/hide toggle
+- Modern design
 - Error handling dengan animations
+
+![Login Demo](https://i.ibb.co.com/pvmjfSdF/login-Page.png/200x200/667eea/ffffff?text=Login+Page)
 
 ### 2. Menu Display
 - Card-based layout
 - Category navigation
 - Clear pricing
 
+![Dashboard Demo](https://i.ibb.co.com/x86Q1Td7/maindashoard.png/200x200/764ba2/ffffff?text=Dashboard)
+
 ### 3. Shopping Cart
 - Real-time updates
 - Quantity controls
 - Total breakdown
+
+![Dashboard Demo](https://i.ibb.co.com/rKBkZYKS/cart.png/200x200/764ba2/ffffff?text=Dashboard)
 
 ### 4. Checkout Process
 - Customer information
 - Payment calculation
 - Receipt generation
 
+![Dashboard Demo](https://i.ibb.co.com/LDZq47bG/check-Out.png/200x200/764ba2/ffffff?text=Dashboard)
+
 ### 5. PDF Receipt
 - Professional layout
 - Complete transaction details
 - Business information
+
+![Receipt Demo](https://i.ibb.co.com/FL39Gx8D/struk.png/200x200/667eea/ffffff?text=PDF+Receipt)
 
 </details>
 
@@ -222,7 +201,7 @@ Create `data/menu.json`:
 
 ### Step 6: Run Application
 ```bash
-python app.py
+python main.py
 ```
 
 Application akan running di: **http://localhost:5000**
