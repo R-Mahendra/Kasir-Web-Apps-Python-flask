@@ -348,7 +348,7 @@ in the Software without restriction...
 | --------------------- | -------- |
 | Reza Mahendra         | 17250007 |
 | Rifqy Ardian Adinata  | 17250522 |
-| Fitria Haryani        | 17250015 |
+| Fitria Haryani        | 17250012 |
 | Muhamad Bagas Triandy | 17250036 |
 | Cheril Aprillia Putri | 17250385 |
 
