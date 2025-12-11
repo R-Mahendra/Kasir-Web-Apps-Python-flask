@@ -12,6 +12,7 @@
   font-family: var(--font-default);
 }
 :root {
+  --zx-green: #16a34a;
   --zx-red: #b91c1c;
   --bg-white: #e2e8f0;
   --bg-primary: #712cf9;
@@ -538,4 +539,60 @@
 /* class aktif → fade in */
 .alertBox.show {
   opacity: 1;
+}
+
+#ContainerAlertSingup {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  min-width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#ContainerAlertSingup .AlertBoxSingup {
+  min-width: 20rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--bg-secondary);
+  color: var(--zx-yellow);
+  border: 2px solid var(--zx-yellow);
+}
+
+#ContainerAlertSingup .AlertBoxSingup h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: var(--font-iceberg);
+}
+
+#ContainerAlertSingup .AlertBoxSingup p {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-iceberg);
+}
+#ContainerAlertSingup .btnAlertconfirm {
+  background: var(--zx-yellow);
+  color: var(--zx-text-dark);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: var(--font-iceberg);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+#ContainerAlertSingup .content-Text {
+  animation: blink 1s infinite;
 }

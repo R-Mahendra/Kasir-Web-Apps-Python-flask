@@ -385,7 +385,7 @@ function clearCart() {
         // Clear display
         const wrapper = document.getElementById("wrapper");
         if (wrapper) {
-          wrapper.innerHTML = '<div class="text-center py-5"><p class="text-muted">Keranjang kosong</p></div>';
+          wrapper.innerHTML = '<div class="text-center py-5"><p class="text-muted">Keranjang kosong nih...😭😭</p></div>';
         }
 
         // Reset cart count

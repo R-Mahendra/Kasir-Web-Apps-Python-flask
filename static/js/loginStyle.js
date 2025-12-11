@@ -90,3 +90,23 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     this.submit(); // submit form beneran
   }, 3000);
 });
+
+// BUTTON SINGUP
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("zx__SubmitSingUp");
+  const ContainerAlertSingup = document.getElementById("ContainerAlertSingup");
+  const btnAlertconfirm = document.getElementById("btnAlertconfirm");
+
+  ContainerAlertSingup.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+  });
+
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // cegah form submit dulu
+    ContainerAlertSingup.classList.remove("d-none");
+  });
+
+  btnAlertconfirm.addEventListener("click", () => {
+    ContainerAlertSingup.classList.add("d-none");
+  });
+});
